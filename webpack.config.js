@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
     entry: './src/main.jsx', // точка входа
@@ -6,7 +8,7 @@ module.exports = {
         filename: 'bundle.js', // имя собранного файла
         path: path.resolve(__dirname, 'dist'), // путь для сохранения собранного файла
         publicPath: '/', // публичный путь (для webpack-dev-server и др.),
-        assetModuleFilename: 'src/assets/[name][ext]'
+        assetModuleFilename: 'assets/[name][ext]'
     },
     module: {
         rules: [
@@ -24,17 +26,14 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'] // загрузчики для CSS файлов
             },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i, // Регулярное выражение для шрифтов
-                type: "asset/resource"
-            },
-            {
-                test: /\.(png|jpe?g|gif|svg)$/,
-                type: 'asset/resource',
-            },
         ]
     },
 
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'index.html', // путь к вашему шаблону index.html
+        })
+    ],
     resolve: {
         extensions: ['.js', '.jsx']
     },
