@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Header = function()  {
     let [expanded, setExpanded] = React.useState(false);
     let [toggled, setToggled] = React.useState(false);
@@ -19,6 +20,7 @@ const Header = function()  {
                     {expanded ? 'Закрыть меню' : 'Открыть меню'}
                 </span>
         </button>
+
         <ul className={'header__links' + (expanded ? ' header__links_opened' : '') + (toggled ? ' header__links-toggled' : '')}>
             <li className="header__item">
                 <a className="header__link header__link_current" href="/" aria-current="page">Сводка</a>

@@ -1,4 +1,4 @@
-@import url("vendors/bootstrap.css");
+@import "fonts.css";
 
 html {
     font-size: 100%;
@@ -7,9 +7,9 @@ html {
 }
 
 body {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    font-family: inherit;
     line-height: inherit;
     margin: 0;
 }
@@ -54,7 +54,7 @@ html, body {
     width: 6.75rem;
     height: 2.3125rem;
     margin-right: 3.25rem;
-    background: no-repeat 50% 50% url(assets/logo.svg);
+    background: no-repeat 50% 50% url('assets/logo.svg');
     background-size: contain;
 }
 
