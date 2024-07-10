@@ -1,7 +1,7 @@
 {
   "name": "shri2024-tas",
   "version": "1.0.0",
-  "homepage": "https://aly0na27.github.io/shri2024-task/",
+  "homepage": "https://aly0na27.github.io/",
   "description": "## Задание Оптимизировать страницу, выложить результат на Github-Pages и отправить его на проверку на [https://shri-performance.ru/](https://shri-performance.ru/), отправив адрес вашей страницы. Нужно набрать минимум **80 баллов**. Набрать больше баллов возможно, но больше 120 в зачёт не пойдёт.",
   "main": "index.js",
   "scripts": {
