@@ -5,7 +5,6 @@ import Main from "./components/Main.jsx";
 import '../styles.css'
 import '../reset.css'
 
-
 const rootElement = document.getElementById('app');
 const root = ReactDOM.createRoot(rootElement);
 
